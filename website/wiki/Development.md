@@ -1,5 +1,3 @@
-# Development Guide
-
 This guide covers development practices, contributing guidelines, and technical details for working on the Cognitive Engine codebase.
 
 ## Development Environment Setup
