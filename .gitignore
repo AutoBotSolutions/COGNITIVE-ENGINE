@@ -27,7 +27,7 @@ docs/
 
 # Training data and weights
 neural_network_weights.npz
-llm_training_data.json
+# llm_training_data.json
 
 # Reasoning traces
 reasoning_traces/
@@ -43,9 +43,9 @@ reasoning_traces/
 .DS_Store
 Thumbs.db
 
-# Memory and knowledge files (runtime data)
-cognitive_memory.json
-cognitive_knowledge.json
+# Memory and knowledge files (runtime data - tracked)
+# cognitive_memory.json
+# cognitive_knowledge.json
 
 # Testing
 .pytest_cache/
