@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognitive Engine Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Cognitive Engine Dashboard</h1>
+            <div class="status">
+                <span id="connection-status" class="status-indicator disconnected">● Disconnected</span>
+                <span id="event-count">Events: 0</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="panel">
+                <h2>Thought Graph</h2>
+                <div id="thought-graph" class="visualization">
+                    <div class="placeholder">Thoughts will appear here</div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>Event Stream</h2>
+                <div id="event-stream" class="event-log">
+                    <div class="placeholder">Events will appear here</div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>Statistics</h2>
+                <div id="statistics" class="stats">
+                    <div class="stat">
+                        <span class="stat-label">Total Thoughts</span>
+                        <span class="stat-value" id="stat-thoughts">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Iterations</span>
+                        <span class="stat-value" id="stat-iterations">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Memory Entries</span>
+                        <span class="stat-value" id="stat-memory">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Avg Confidence</span>
+                        <span class="stat-value" id="stat-confidence">0.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>Layer Activity</h2>
+                <div id="layer-activity" class="activity-log">
+                    <div class="placeholder">Layer activity will appear here</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

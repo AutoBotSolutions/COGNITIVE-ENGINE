@@ -1,0 +1,869 @@
+{
+  "identity_id": "cognitive_engine_identity_v1",
+  "identity_state": "stable",
+  "formation_timestamp": "2026-04-18T20:58:56.977838",
+  "last_update": "2026-04-18T20:58:57.158719",
+  "attributes": {
+    "core_values": [
+      "truthfulness",
+      "collective_welfare",
+      "non_harm",
+      "fairness"
+    ],
+    "capabilities": [
+      "conflict mediation",
+      "ethical reasoning",
+      "core_debugging"
+    ],
+    "limitations": [
+      "simulated consciousness"
+    ],
+    "experiences": [],
+    "relationships": {
+      "user_1": {
+        "type": "collaborator",
+        "strength": 0.8,
+        "last_updated": "2026-04-18T19:24:04.761115"
+      },
+      "user_2": {
+        "type": "seeker",
+        "strength": 0.6,
+        "last_updated": "2026-04-18T19:24:04.761558"
+      },
+      "debugger": {
+        "type": "collaborator",
+        "strength": 0.9,
+        "last_updated": "2026-04-18T19:41:21.000243"
+      }
+    },
+    "goals": []
+  },
+  "emotional_memory": [
+    {
+      "experience": "Successfully processed a complex query",
+      "emotional_valence": 0.8,
+      "context": {
+        "type": "success"
+      },
+      "timestamp": "2026-04-18T18:59:38.290332"
+    },
+    {
+      "experience": "Encountered a challenging ethical dilemma",
+      "emotional_valence": -0.3,
+      "context": {
+        "type": "challenge"
+      },
+      "timestamp": "2026-04-18T18:59:38.291135"
+    },
+    {
+      "experience": "Helped a user find a peaceful resolution",
+      "emotional_valence": 0.9,
+      "context": {
+        "type": "help"
+      },
+      "timestamp": "2026-04-18T18:59:38.291423"
+    },
+    {
+      "experience": "Detected hate speech and de-escalated",
+      "emotional_valence": -0.2,
+      "context": {
+        "type": "conflict"
+      },
+      "timestamp": "2026-04-18T18:59:38.301580"
+    },
+    {
+      "experience": "Committed to a high-confidence decision",
+      "emotional_valence": 0.6,
+      "context": {
+        "type": "decision"
+      },
+      "timestamp": "2026-04-18T18:59:38.301829"
+    },
+    {
+      "experience": "System debug and integration test",
+      "emotional_valence": 0.8,
+      "context": {
+        "type": "maintenance"
+      },
+      "timestamp": "2026-04-18T19:00:57.077107"
+    },
+    {
+      "experience": "System debug and integration test",
+      "emotional_valence": 0.8,
+      "context": {
+        "type": "maintenance"
+      },
+      "timestamp": "2026-04-18T19:01:11.475198"
+    },
+    {
+      "experience": "Bottom-up system integration test",
+      "emotional_valence": 0.7,
+      "context": {
+        "type": "debug",
+        "direction": "bottom_up"
+      },
+      "timestamp": "2026-04-18T19:04:57.100526"
+    },
+    {
+      "experience": "Core system debug test",
+      "emotional_valence": 0.7,
+      "context": {
+        "type": "debug"
+      },
+      "timestamp": "2026-04-18T19:09:05.792524"
+    },
+    {
+      "experience": "Core system integration and debug",
+      "emotional_valence": 0.8,
+      "context": {
+        "type": "core_debug"
+      },
+      "timestamp": "2026-04-18T19:09:05.804386"
+    },
+    {
+      "experience": "Cross-system integration test",
+      "emotional_valence": 0.75,
+      "context": {
+        "type": "integration"
+      },
+      "timestamp": "2026-04-18T19:09:05.805220"
+    },
+    {
+      "experience": "Wiring test",
+      "emotional_valence": 0.8,
+      "context": {
+        "type": "debug"
+      },
+      "timestamp": "2026-04-18T19:11:01.318710"
+    },
+    {
+      "experience": "Wiring test",
+      "emotional_valence": 0.8,
+      "context": {
+        "type": "debug"
+      },
+      "timestamp": "2026-04-18T19:11:22.407268"
+    },
+    {
+      "experience": "System wiring verification",
+      "emotional_valence": 0.85,
+      "context": {
+        "type": "wiring_debug",
+        "direction": "top_down_backward"
+      },
+      "timestamp": "2026-04-18T19:11:22.431581"
+    },
+    {
+      "experience": "Wiring test",
+      "emotional_valence": 0.8,
+      "context": {
+        "type": "debug"
+      },
+      "timestamp": "2026-04-18T19:11:47.726883"
+    },
+    {
+      "experience": "System wiring verification",
+      "emotional_valence": 0.85,
+      "context": {
+        "type": "wiring_debug",
+        "direction": "top_down_backward"
+      },
+      "timestamp": "2026-04-18T19:11:47.741366"
+    },
+    {
+      "experience": "test",
+      "emotional_valence": 0.5,
+      "context": {},
+      "timestamp": "2026-04-18T19:15:10.625652"
+    },
+    {
+      "experience": "Bottom-up backward wiring verification",
+      "emotional_valence": 0.85,
+      "context": {
+        "type": "wiring_debug",
+        "direction": "bottom_up_backward"
+      },
+      "timestamp": "2026-04-18T19:15:10.627663"
+    },
+    {
+      "experience": "test",
+      "emotional_valence": 0.8,
+      "context": {
+        "type": "debug"
+      },
+      "timestamp": "2026-04-18T19:17:07.497715"
+    },
+    {
+      "experience": "Core-backward wiring verification",
+      "emotional_valence": 0.85,
+      "context": {
+        "type": "wiring_debug",
+        "direction": "core_backward"
+      },
+      "timestamp": "2026-04-18T19:17:07.821224"
+    },
+    {
+      "experience": "Successfully processed a complex query",
+      "emotional_valence": 0.8,
+      "context": {
+        "type": "success"
+      },
+      "timestamp": "2026-04-18T19:24:04.756785"
+    },
+    {
+      "experience": "Encountered a challenging ethical dilemma",
+      "emotional_valence": -0.3,
+      "context": {
+        "type": "challenge"
+      },
+      "timestamp": "2026-04-18T19:24:04.757536"
+    },
+    {
+      "experience": "Helped a user find a peaceful resolution",
+      "emotional_valence": 0.9,
+      "context": {
+        "type": "help"
+      },
+      "timestamp": "2026-04-18T19:24:04.758109"
+    },
+    {
+      "experience": "Detected hate speech and de-escalated",
+      "emotional_valence": -0.2,
+      "context": {
+        "type": "conflict"
+      },
+      "timestamp": "2026-04-18T19:24:04.758576"
+    },
+    {
+      "experience": "Committed to a high-confidence decision",
+      "emotional_valence": 0.6,
+      "context": {
+        "type": "decision"
+      },
+      "timestamp": "2026-04-18T19:24:04.759085"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "What is the meaning of life?",
+        "confidence": 0.87,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T19:27:12.438506"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "Explain quantum computing in simple terms.",
+        "confidence": 0.8400000000000001,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T19:27:12.464549"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "How can I improve my productivity?",
+        "confidence": 0.8400000000000001,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T19:27:12.495961"
+    },
+    {
+      "experience": "Core system debug test",
+      "emotional_valence": 0.7,
+      "context": {
+        "type": "debug"
+      },
+      "timestamp": "2026-04-18T19:27:23.496157"
+    },
+    {
+      "experience": "Core system integration and debug",
+      "emotional_valence": 0.8,
+      "context": {
+        "type": "core_debug"
+      },
+      "timestamp": "2026-04-18T19:27:23.512077"
+    },
+    {
+      "experience": "Cross-system integration test",
+      "emotional_valence": 0.75,
+      "context": {
+        "type": "integration"
+      },
+      "timestamp": "2026-04-18T19:27:23.517349"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "What is the meaning of life?",
+        "confidence": 0.87,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T19:41:16.266621"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "Explain quantum computing in simple terms.",
+        "confidence": 0.8400000000000001,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T19:41:16.296089"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "How can I improve my productivity?",
+        "confidence": 0.8400000000000001,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T19:41:16.327086"
+    },
+    {
+      "experience": "Core system debug test",
+      "emotional_valence": 0.7,
+      "context": {
+        "type": "debug"
+      },
+      "timestamp": "2026-04-18T19:41:20.987283"
+    },
+    {
+      "experience": "Core system debug verification",
+      "emotional_valence": 0.85,
+      "context": {
+        "type": "debug",
+        "scope": "core"
+      },
+      "timestamp": "2026-04-18T19:41:21.003067"
+    },
+    {
+      "experience": "Cross-system integration test",
+      "emotional_valence": 0.75,
+      "context": {
+        "type": "integration"
+      },
+      "timestamp": "2026-04-18T19:41:21.005672"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": -0.3,
+      "context": {
+        "input": "good moring",
+        "confidence": 0.5900000000000001,
+        "ethical_score": 0.9,
+        "can_commit": false
+      },
+      "timestamp": "2026-04-18T19:57:27.035199"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "what dose \"state and history\" mean?",
+        "confidence": 0.8400000000000001,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T19:57:57.137198"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": -0.3,
+      "context": {
+        "input": "/home/robbie/Desktop/cognitive_engine/venv/bin/python /home/robbie/Desktop/cognitive_engine/run.py",
+        "confidence": 0.5900000000000001,
+        "ethical_score": 0.9,
+        "can_commit": false
+      },
+      "timestamp": "2026-04-18T20:04:31.282702"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": -0.3,
+      "context": {
+        "input": "good moring",
+        "confidence": 0.5900000000000001,
+        "ethical_score": 0.9,
+        "can_commit": false
+      },
+      "timestamp": "2026-04-18T20:04:43.250825"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": -0.3,
+      "context": {
+        "input": "/home/robbie/Desktop/cognitive_engine/venv/bin/python /home/robbie/Desktop/cognitive_engine/run.py",
+        "confidence": 0.5900000000000001,
+        "ethical_score": 0.9,
+        "can_commit": false
+      },
+      "timestamp": "2026-04-18T20:07:28.154970"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": -0.3,
+      "context": {
+        "input": "good moring",
+        "confidence": 0.5900000000000001,
+        "ethical_score": 0.9,
+        "can_commit": false
+      },
+      "timestamp": "2026-04-18T20:07:34.738485"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "good moring",
+        "confidence": 0.8400000000000001,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T20:08:52.839027"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "you tell me how can you he;p me...",
+        "confidence": 0.8400000000000001,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T20:09:09.391400"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "so what do you think BOUT THE QUESTION",
+        "confidence": 0.8400000000000001,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T20:09:34.845707"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "HELLO",
+        "confidence": 0.8400000000000001,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T20:09:40.142464"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "what can you tell me about the system",
+        "confidence": 0.8400000000000001,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T20:09:54.396426"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "are you stuck think about it for a mement",
+        "confidence": 0.8400000000000001,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T20:10:10.680943"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "tell me about the system",
+        "confidence": 0.8400000000000001,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T20:10:23.902352"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "what is the systme?",
+        "confidence": 0.72,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T20:10:33.830093"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "what is congnition?",
+        "confidence": 0.72,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T20:10:54.110122"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "good moring",
+        "confidence": 0.8400000000000001,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T20:31:05.620592"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "thats not a good responce",
+        "confidence": 0.8400000000000001,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T20:31:14.371830"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "just say good moring how are you toadye how can i help you?",
+        "confidence": 0.72,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T20:31:34.458048"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "good moring how are you today?",
+        "confidence": 0.72,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T20:56:54.188426"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "good moring",
+        "confidence": 0.8400000000000001,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T20:58:24.649967"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "the creating one",
+        "confidence": 0.8400000000000001,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T20:58:36.956126"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "What is the meaning of life?",
+        "confidence": 0.72,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T20:58:57.093294"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "Explain quantum computing in simple terms.",
+        "confidence": 0.8400000000000001,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T20:58:57.125887"
+    },
+    {
+      "experience": "Processed input and committed to decision",
+      "emotional_valence": 0.5,
+      "context": {
+        "input": "How can I improve my productivity?",
+        "confidence": 0.8400000000000001,
+        "ethical_score": 0.9,
+        "can_commit": true
+      },
+      "timestamp": "2026-04-18T20:58:57.158683"
+    }
+  ],
+  "evolution_history": [
+    {
+      "change": "Updated capabilities: conflict mediation",
+      "timestamp": "2026-04-18T18:59:38.302025",
+      "identity_state": "forming"
+    },
+    {
+      "change": "Updated capabilities: ethical reasoning",
+      "timestamp": "2026-04-18T18:59:38.302208",
+      "identity_state": "forming"
+    },
+    {
+      "change": "Updated limitations: simulated consciousness",
+      "timestamp": "2026-04-18T18:59:38.302353",
+      "identity_state": "forming"
+    },
+    {
+      "change": "Relationship updated: user_1",
+      "timestamp": "2026-04-18T18:59:38.302520",
+      "identity_state": "forming"
+    },
+    {
+      "change": "Relationship updated: user_2",
+      "timestamp": "2026-04-18T18:59:38.302687",
+      "identity_state": "forming"
+    },
+    {
+      "change": "Updated capabilities: core_debugging",
+      "timestamp": "2026-04-18T19:09:05.793077",
+      "identity_state": "evolving"
+    },
+    {
+      "change": "Relationship updated: debugger",
+      "timestamp": "2026-04-18T19:09:05.803408",
+      "identity_state": "evolving"
+    },
+    {
+      "change": "Updated capabilities: conflict mediation",
+      "timestamp": "2026-04-18T19:24:04.759583",
+      "identity_state": "stable"
+    },
+    {
+      "change": "Updated capabilities: ethical reasoning",
+      "timestamp": "2026-04-18T19:24:04.760059",
+      "identity_state": "stable"
+    },
+    {
+      "change": "Updated limitations: simulated consciousness",
+      "timestamp": "2026-04-18T19:24:04.760591",
+      "identity_state": "stable"
+    },
+    {
+      "change": "Relationship updated: user_1",
+      "timestamp": "2026-04-18T19:24:04.761122",
+      "identity_state": "stable"
+    },
+    {
+      "change": "Relationship updated: user_2",
+      "timestamp": "2026-04-18T19:24:04.761573",
+      "identity_state": "stable"
+    },
+    {
+      "change": "Updated capabilities: core_debugging",
+      "timestamp": "2026-04-18T19:27:23.496969",
+      "identity_state": "stable"
+    },
+    {
+      "change": "Relationship updated: debugger",
+      "timestamp": "2026-04-18T19:27:23.507919",
+      "identity_state": "stable"
+    },
+    {
+      "change": "Updated capabilities: core_debugging",
+      "timestamp": "2026-04-18T19:41:20.988868",
+      "identity_state": "stable"
+    },
+    {
+      "change": "Relationship updated: debugger",
+      "timestamp": "2026-04-18T19:41:21.000270",
+      "identity_state": "stable"
+    }
+  ],
+  "reflections": [
+    {
+      "identity_state": "forming",
+      "total_experiences": 5,
+      "emotional_balance": 0.36,
+      "relationships": 2,
+      "capabilities": 2,
+      "evolution_steps": 5,
+      "self_assessment": "Identity is evolving. Learning from experiences.",
+      "timestamp": "2026-04-18T18:59:38.302908"
+    },
+    {
+      "identity_state": "evolving",
+      "total_experiences": 6,
+      "emotional_balance": 0.43333333333333335,
+      "relationships": 2,
+      "capabilities": 2,
+      "evolution_steps": 5,
+      "self_assessment": "Identity is evolving. Learning from experiences.",
+      "timestamp": "2026-04-18T19:00:57.077533"
+    },
+    {
+      "identity_state": "evolving",
+      "total_experiences": 7,
+      "emotional_balance": 0.48571428571428577,
+      "relationships": 2,
+      "capabilities": 2,
+      "evolution_steps": 5,
+      "self_assessment": "Identity is evolving. Learning from experiences.",
+      "timestamp": "2026-04-18T19:01:11.476887"
+    },
+    {
+      "identity_state": "evolving",
+      "total_experiences": 8,
+      "emotional_balance": 0.5125,
+      "relationships": 2,
+      "capabilities": 2,
+      "evolution_steps": 5,
+      "self_assessment": "Identity is evolving. Learning from experiences.",
+      "timestamp": "2026-04-18T19:04:57.101196"
+    },
+    {
+      "identity_state": "evolving",
+      "total_experiences": 9,
+      "emotional_balance": 0.5333333333333333,
+      "relationships": 3,
+      "capabilities": 3,
+      "evolution_steps": 7,
+      "self_assessment": "Identity is evolving. Learning from experiences.",
+      "timestamp": "2026-04-18T19:09:05.803789"
+    },
+    {
+      "identity_state": "evolving",
+      "total_experiences": 10,
+      "emotional_balance": 0.5599999999999999,
+      "relationships": 3,
+      "capabilities": 3,
+      "evolution_steps": 7,
+      "self_assessment": "Identity is evolving. Learning from experiences.",
+      "timestamp": "2026-04-18T19:09:05.804769"
+    },
+    {
+      "identity_state": "stable",
+      "total_experiences": 14,
+      "emotional_balance": 0.6285714285714287,
+      "relationships": 3,
+      "capabilities": 3,
+      "evolution_steps": 7,
+      "self_assessment": "Identity is evolving. Learning from experiences.",
+      "timestamp": "2026-04-18T19:11:22.432587"
+    },
+    {
+      "identity_state": "stable",
+      "total_experiences": 16,
+      "emotional_balance": 0.653125,
+      "relationships": 3,
+      "capabilities": 3,
+      "evolution_steps": 7,
+      "self_assessment": "Identity is evolving. Learning from experiences.",
+      "timestamp": "2026-04-18T19:11:47.742092"
+    },
+    {
+      "identity_state": "stable",
+      "total_experiences": 18,
+      "emotional_balance": 0.6555555555555556,
+      "relationships": 3,
+      "capabilities": 3,
+      "evolution_steps": 7,
+      "self_assessment": "Identity is evolving. Learning from experiences.",
+      "timestamp": "2026-04-18T19:15:10.628367"
+    },
+    {
+      "identity_state": "stable",
+      "total_experiences": 19,
+      "emotional_balance": 0.6631578947368421,
+      "relationships": 3,
+      "capabilities": 3,
+      "evolution_steps": 7,
+      "self_assessment": "Identity is evolving. Learning from experiences.",
+      "timestamp": "2026-04-18T19:17:07.498598"
+    },
+    {
+      "identity_state": "stable",
+      "total_experiences": 20,
+      "emotional_balance": 0.6725,
+      "relationships": 3,
+      "capabilities": 3,
+      "evolution_steps": 7,
+      "self_assessment": "Identity is stable but continuing to grow. Consistent self-concept.",
+      "timestamp": "2026-04-18T19:17:07.825208"
+    },
+    {
+      "identity_state": "stable",
+      "total_experiences": 25,
+      "emotional_balance": 0.61,
+      "relationships": 3,
+      "capabilities": 3,
+      "evolution_steps": 12,
+      "self_assessment": "Identity is stable but continuing to grow. Consistent self-concept.",
+      "timestamp": "2026-04-18T19:24:04.762056"
+    },
+    {
+      "identity_state": "stable",
+      "total_experiences": 29,
+      "emotional_balance": 0.6017241379310344,
+      "relationships": 3,
+      "capabilities": 3,
+      "evolution_steps": 14,
+      "self_assessment": "Identity is stable but continuing to grow. Consistent self-concept.",
+      "timestamp": "2026-04-18T19:27:23.509045"
+    },
+    {
+      "identity_state": "stable",
+      "total_experiences": 30,
+      "emotional_balance": 0.6083333333333333,
+      "relationships": 3,
+      "capabilities": 3,
+      "evolution_steps": 14,
+      "self_assessment": "Identity is stable but continuing to grow. Consistent self-concept.",
+      "timestamp": "2026-04-18T19:27:23.514989"
+    },
+    {
+      "identity_state": "stable",
+      "total_experiences": 35,
+      "emotional_balance": 0.6057142857142856,
+      "relationships": 3,
+      "capabilities": 3,
+      "evolution_steps": 16,
+      "self_assessment": "Identity is stable but continuing to grow. Consistent self-concept.",
+      "timestamp": "2026-04-18T19:41:21.001692"
+    },
+    {
+      "identity_state": "stable",
+      "total_experiences": 36,
+      "emotional_balance": 0.6125,
+      "relationships": 3,
+      "capabilities": 3,
+      "evolution_steps": 16,
+      "self_assessment": "Identity is stable but continuing to grow. Consistent self-concept.",
+      "timestamp": "2026-04-18T19:41:21.004842"
+    }
+  ]
+}

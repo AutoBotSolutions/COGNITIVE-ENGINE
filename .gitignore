@@ -1,0 +1,62 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+cognitive_engine.db
+
+# Logs
+*.log
+cognitive_engine.log
+
+# Documentation (excluded per request)
+docs/
+
+# Training data and weights
+neural_network_weights.npz
+llm_training_data.json
+
+# Reasoning traces
+reasoning_traces/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Memory and knowledge files (runtime data)
+cognitive_memory.json
+cognitive_knowledge.json
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Temporary files
+*.tmp
+*.bak
+*.cache

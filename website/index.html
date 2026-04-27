@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognitive Engine - Explicit Thought Formation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3a 50%, #0a1a2a 100%);
+            color: #e0e0ff;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Animated background grid */
+        .grid-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(10, 10, 30, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+            padding: 1rem 2rem;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #00d4ff;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #a0a0ff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: #00d4ff;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #00d4ff;
+            transition: width 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding: 150px 2rem 100px;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, #00d4ff, #a0a0ff, #00d4ff);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 3s ease infinite;
+            text-shadow: none;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% center; }
+            50% { background-position: 100% center; }
+            100% { background-position: 0% center; }
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: #a0a0ff;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.8;
+        }
+
+        .hero .tagline {
+            font-size: 1.1rem;
+            color: #00d4ff;
+            margin-bottom: 2rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        /* CTA Buttons */
+        .cta-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .cta-button {
+            padding: 1rem 2rem;
+            border: 2px solid #00d4ff;
+            background: transparent;
+            color: #00d4ff;
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button:hover {
+            background: rgba(0, 212, 255, 0.1);
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .cta-button.primary {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(0, 212, 255, 0.1));
+        }
+
+        /* Features Section */
+        .features {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            z-index: 1;
+            position: relative;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #00d4ff;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(20, 20, 50, 0.8);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            padding: 2rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00d4ff, transparent);
+            transform: translateX(-100%);
+            transition: transform 0.5s ease;
+        }
+
+        .feature-card:hover::before {
+            transform: translateX(100%);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+            border-color: rgba(0, 212, 255, 0.5);
+        }
+
+        .feature-card h3 {
+            color: #00d4ff;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .feature-card p {
+            color: #a0a0ff;
+            line-height: 1.6;
+        }
+
+        /* Documentation Section */
+        .documentation {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            z-index: 1;
+            position: relative;
+        }
+
+        .documentation h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #00d4ff;
+        }
+
+        /* Pages/Investors Section */
+        .pages {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            z-index: 1;
+            position: relative;
+        }
+
+        .pages h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #00d4ff;
+        }
+
+        .doc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .doc-card {
+            background: rgba(20, 20, 50, 0.6);
+            border: 1px solid rgba(160, 160, 255, 0.3);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .doc-card:hover {
+            background: rgba(0, 212, 255, 0.1);
+            border-color: #00d4ff;
+            transform: scale(1.05);
+        }
+
+        .doc-card h3 {
+            color: #00d4ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .doc-card p {
+            color: #a0a0ff;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(5, 5, 20, 0.95);
+            border-top: 1px solid rgba(0, 212, 255, 0.3);
+            padding: 2rem;
+            text-align: center;
+            z-index: 1;
+            position: relative;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            color: #8080ff;
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .features-grid,
+            .doc-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Glowing effect */
+        .glow {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(0, 212, 255, 0.8), 0 0 30px rgba(0, 212, 255, 0.6);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-background"></div>
+
+    <nav>
+        <div class="logo glow">COGNITIVE ENGINE</div>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#documentation">Documentation</a></li>
+            <li><a href="#pages">Investors</a></li>
+            <li><a href="wiki/Home.md">Wiki</a></li>
+            <li><a href="licences/LICENSE.md">License</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="tagline">Explicit Thought Formation</div>
+        <h1 class="glow">COGNITIVE ENGINE</h1>
+        <p>
+            Transforming AI from answering to thinking, from reacting to reasoning, from output to cognition. 
+            A system where reasoning is explicit, inspectable, and iterative.
+        </p>
+        <div class="cta-container">
+            <a href="wiki/Getting-Started.md" class="cta-button primary">Get Started</a>
+            <a href="wiki/Architecture.md" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Core Capabilities</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Thought Objects</h3>
+                <p>Structured entities with state, history, and evaluative properties that persist beyond single operations.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Three-Layer Memory</h3>
+                <p>Episodic (raw events), Pattern (structure extraction), and Rule (learned strategies) memory architecture.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Meta-Cognition</h3>
+                <p>Oversight layer governing thinking depth, stopping conditions, and confidence thresholds.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Cognitive Telemetry</h3>
+                <p>Real-time dashboard observing thought formation with temporal intelligence and feedback resonance.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Autonomous Agent</h3>
+                <p>Goal-driven behavior with tool execution, planning, and adaptive learning.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Controlled Evolution</h3>
+                <p>Self-improvement through A/B testing, evaluation against historical performance, and rollback capability.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="documentation" id="documentation">
+        <h2>Documentation</h2>
+        <div class="doc-grid">
+            <a href="wiki/Getting-Started.md" class="doc-card">
+                <h3>Getting Started</h3>
+                <p>Installation and basic usage</p>
+            </a>
+            <a href="wiki/Architecture.md" class="doc-card">
+                <h3>Architecture</h3>
+                <p>System design and components</p>
+            </a>
+            <a href="wiki/Core-Modules.md" class="doc-card">
+                <h3>Core Modules</h3>
+                <p>Detailed module documentation</p>
+            </a>
+            <a href="wiki/API-Reference.md" class="doc-card">
+                <h3>API Reference</h3>
+                <p>Complete API documentation</p>
+            </a>
+            <a href="wiki/User-Guide.md" class="doc-card">
+                <h3>User Guide</h3>
+                <p>Comprehensive user manual</p>
+            </a>
+            <a href="wiki/Integration.md" class="doc-card">
+                <h3>Integration</h3>
+                <p>Integration examples</p>
+            </a>
+            <a href="wiki/Security.md" class="doc-card">
+                <h3>Security</h3>
+                <p>Security best practices</p>
+            </a>
+            <a href="wiki/FAQ.md" class="doc-card">
+                <h3>FAQ</h3>
+                <p>Frequently asked questions</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="pages" id="pages">
+        <h2>Investors & Documentation</h2>
+        <div class="doc-grid">
+            <a href="pages/The Cognitive Engine - Investor Overview.html" class="doc-card">
+                <h3>Investor Overview</h3>
+                <p>Investment opportunity and market analysis</p>
+            </a>
+            <a href="pages/The Cognitive Engine Thesis - Master.html" class="doc-card">
+                <h3>Thesis (Master)</h3>
+                <p>Complete thesis document</p>
+            </a>
+            <a href="pages/The Cognitive Engine Thesis Part 1.html" class="doc-card">
+                <h3>Thesis Part 1</h3>
+                <p>Cognition as Structure</p>
+            </a>
+            <a href="pages/The Cognitive Engine Thesis Part 2.html" class="doc-card">
+                <h3>Thesis Part 2</h3>
+                <p>Cognition as Continuity</p>
+            </a>
+            <a href="pages/The Cognitive Engine Thesis Part 3.html" class="doc-card">
+                <h3>Thesis Part 3</h3>
+                <p>Cognition as Transparency</p>
+            </a>
+            <a href="pages/The Cognitive Engine Thesis Part 4.html" class="doc-card">
+                <h3>Thesis Part 4</h3>
+                <p>Cognition as Agency</p>
+            </a>
+            <a href="pages/The Cognitive Engine Thesis Part 5.html" class="doc-card">
+                <h3>Thesis Part 5</h3>
+                <p>Cognition as Entity</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cognitive Engine. All rights reserved.</p>
+        <p>Owner: Robert Trenaman | Company: (Software Customs) Auto Bot Solution</p>
+        <p><a href="mailto:autobotsolution@gmail.com">autobotsolution@gmail.com</a> | Flushing MI</p>
+    </footer>
+</body>
+</html>
