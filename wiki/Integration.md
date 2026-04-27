@@ -1,5 +1,3 @@
-# Integration Guide
-
 This guide covers integrating the Cognitive Engine with other systems and applications.
 
 ## Table of Contents
